@@ -76,8 +76,26 @@ header ul .header_li{
     margin: 0 50px 25px 0;
     
 }
+header ul .header_li a{
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+}
+header ul .header_li a:active{
+    text-decoration: none;
+    color: white;
+}
+header ul .header_li a:visited{
+    text-decoration: none;
+    color: white;
+}
+header ul .header_li a:hover{
+    text-decoration: none;
+    color: #666;
 
-a{text-decoration:none}
+
+}
+a{text-decoration:none;}
 .content_wrap>div{height:1500px}
 div.content{width:1400px;margin:0 auto}
 .hide {display:none}
@@ -99,6 +117,7 @@ footer{
     background-color: #191919;
     color: white;
     position: relative;
+    /* margin-bottom: 110px; */
 }
 #team{
     font-size: 24px; font-weight: 700; line-height: 24px;
@@ -108,16 +127,26 @@ footer{
 footer div{
     position: absolute;
     top: 250px; left: 200px;
+    display: inline-flex;
 
 
 }
 .name{
     font-size: 20px; font-weight: 500; line-height: 20px;
-    display: inline-block;
+    letter-spacing :2%;
+    display: block;
     margin-right: 125px;
 }
 .name span{
     font-size: 14px; font-weight: 500; line-height: 14px;
+    letter-spacing :-0.2%;
+}
+.name .email{
+    font-size: 14px; font-weight: 500; line-height: 14px;
+    letter-spacing :-0.2%;
+    display: block;
+    padding-top: 10px;
+    color: #999;
 }
 
 p{
@@ -140,3 +169,21 @@ h3{
     }
 }
 
+
+.border_v {
+    border: 7px solid #191919;
+}
+
+
+
+
+
+@keyframes rolling{
+    from{
+        left: 100px;
+    }
+    to{
+        left: -500px;
+    }
+
+}

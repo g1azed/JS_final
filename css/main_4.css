@@ -2,13 +2,15 @@
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    letter-spacing: -2%;
+    text-transform: uppercase;
 }
 
 .main_p {
     font-size: 60px;
     line-height: 75px;
     font-weight: 300;
-    margin-top: 80px;
+    margin-top: 75px;
     letter-spacing: -2%;
 }
 
@@ -29,18 +31,41 @@
 #box11 {
     width: 1920px;
     height: 1505px;
+    background-color: #f6f6f6;
 }
 
 #box11 #service_design {
-    margin: 150px 0 0 0;
+
     text-align: center;
+}
+#box11 #service_design .main_h2{
+    display: inline-block;
+    margin: 150px 0 0 0;
+    /* padding: 0 0 150px 0; */
+}
+#box11 #service_motion{
+    margin-top: 120px;
+    width: 100%;
+    overflow: hidden;
+}
+#box11 #service_img_wrap{
+    display: flex;
+}
+#box11 #service_img_wrap .service_img{
+    width:300px; height: 650px;
+    margin-right: 130px;
+    margin: 40px 130px 0 0 ;
+}
+#box11 #service_img_wrap #service_main{
+    width: 320px; height: 692px;
+    margin-right: 130px;
+    filter:drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.1));
 }
 
 /*section 12*/
 #box12 {
     width: 1920px;
     height: 2690px;
-    background-color: #f1f1f1;
 }
 
 #home {
@@ -51,14 +76,22 @@
     margin-top: 94px;
     width: 1920px;
     height: auto;
-    background-image: url(./img/iPhone_Frame.png);
+    background-image: url(./img/mockup/i_frame.png);
     background-size: 20.1%;
     background-repeat: no-repeat;
     background-position: top center;
 
     position: relative;
 }
+#home_img #home_frame{
+    width: 1920px; height: 812px;
+    background-image: url(./img/mockup/i_frame.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
 
+    left: 766px
+}
 #home_img #home_bg {
     width: 375px;
     height: auto;
@@ -66,6 +99,7 @@
     margin-left: 773px;
     margin-top: 5px;
     z-index: 0;
+    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.1));
 }
 
 #home_img .fit_img {
@@ -142,7 +176,7 @@
 
 #home_text_wrap #home_dot img:nth-child(2) {
     top: 690px;
-    left: 550px;
+    left: 540px;
     transform: rotate(180deg);
 }
 
@@ -154,7 +188,7 @@
 
 #home_text_wrap #home_dot img:nth-child(4) {
     top: 1380px;
-    left: 550px;
+    left: 540px;
     transform: rotate(180deg);
 }
 
@@ -213,13 +247,14 @@
 #box13 {
     width: 1920px;
     height: 1080px;
-    background-color: black;
+    /* background-color: black; */
     color: white;
     display: block;
+    background-image: url(../css/img/background/popup_bg.png);
 }
 
 #popup_l_text {
-    margin: 200px 0 0 400px;
+    margin: 200px 0 0 200px;
     display: inline-block;
 }
 
@@ -249,17 +284,21 @@
 #prevent_r_text {
     width: 633px;
     height: 366px;
-    /* margin: 0px 327px 0 0; */
+    margin: 0px 0 40px 0;
     float: right;
 }
 
 .one_time {
     /* position: relative;
     top: 500px; */
-    width: 500px;
+    width: 540px;
     height: 170px;
     float: left;
     margin-top: 110px;
+}
+.one_time div{
+    width: 527px;
+    overflow-x: hidden;
 }
 .one_time div p{
     width: 497px;
@@ -273,6 +312,7 @@
     height: auto;
 
     margin-right: 15px;
+    overflow-x: hidden;
 }
 
 .one_time .prev-arrow {
@@ -320,14 +360,14 @@
     background-image: url(./img/background/communicate2_bg.png);
     background-size: cover;
     display: inline-block;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 
     position: relative;
 }
 
-#communicate img {
+#communicate video {
     width: 375px;
-    height: 812px;
+    height: auto;
     display: inline-block;
 
     margin: 138px 0 334px 454px;
@@ -357,9 +397,10 @@
     display: inline-block;
 }
 
-#rr img {
-    width: 375px;
-    height: 812px;
+#rr video{
+    /* width: 375px;
+    height: 812px; */
+    display: inline-block;
     position: absolute;
     left: 967px;
     top: -450px;
@@ -395,6 +436,11 @@
     height: 649px;
     margin: 80px 330px 100px 330px;
 }
+#map #map_video{
+    width: 300px;
+    height: 649px;
+    margin: 80px 330px 100px 330px;
+}
 
 #radio {
     width: 960px;
@@ -409,7 +455,7 @@
     margin-top: 190px;
 }
 
-#radio img {
+#radio #map_radio {
     width: 300px;
     height: 649px;
     margin: 80px 330px 100px 330px;
@@ -429,10 +475,11 @@
     /*나중에 삭제*/
 }
 
-#support #support_main_img {
+#support video {
     width: 375px;
     height: 812px;
     margin: 134px 0 0 200px;
+    border-radius: 30px;
 }
 
 #support #support_right {
@@ -537,10 +584,12 @@
 
 #volunteer #volun_main {
     width: 375px;
-    height: 812px;
+    height: auto;
     position: absolute;
     top: 134px;
     left: 451px;
+    border-radius: 30px;
+    border: 7px solid #191919;
 }
 
 #volunteer #volunteer_right {
@@ -554,6 +603,8 @@
     width: 381px;
     height: auto;
     margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 
 }
 
