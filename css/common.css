@@ -1,0 +1,142 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+* { 
+font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+*{
+    font-family: Pretendard;
+    margin:0; padding:0;
+    margin:0 0 ;
+    box-sizing: border-box;
+
+}
+html{
+    max-width: 1920px;
+    /* overflow-x: hidden; */
+}
+body{
+    max-width: 1920px;
+    overflow-x: hidden;
+}
+
+.main_box{
+
+    width: 1920px;  height: 1080px;
+    display: block;
+
+    /* border: 1px solid #ccc; */
+}
+
+.top_padding{
+    width:1520px; height: 150px;
+}
+
+/*design_BG*/
+#design_bg{
+    width: 1920px; height:400px;
+    background-image: url(./img/background/desgin_bg.png);
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    margin-top: 800px;
+}
+
+/* 헤더 영역 */
+header{
+    width: 100%; height: 80px;
+    position: fixed;
+
+    /* border-bottom: 5px solid #666; */
+    /* background-color: black; */
+    z-index: 4;
+
+    top: 0px;
+    transition: top 1s;
+}
+
+header img{
+    width: 40px; height: 40px;
+    display: inline;
+    margin: 0 50px 0 0;
+}
+header ul{
+    /* height: 40px; width: auto; */
+    color: white;
+    list-style-type: none;
+    margin: 20px 0 20px 200px;
+    /* padding-bottom: 20px; */
+}
+header ul li{
+    display: inline-block;
+}
+header ul .header_li{
+    font-size: 16px; font-weight: 700; line-height: 32px;
+    /* padding: 12px 0 12px 0; */
+    vertical-align: middle; 
+    margin: 0 50px 25px 0;
+    
+}
+
+a{text-decoration:none}
+.content_wrap>div{height:1500px}
+div.content{width:1400px;margin:0 auto}
+.hide {display:none}
+
+/* 스크롤 메뉴 */
+.scroll_01{background-color:crimson;color:#fff}
+
+/* 아래로 스크롤하면 배경이 사라지고 위로 스크롤 하면 배경이 생깁니다. */
+.scroll_01{position:fixed;top:0;left:50%;
+    z-index:100;
+    width:100%;padding:10px 0;
+    text-align:center;
+    transform:translate(-50%);
+    transition:all .3s;
+}
+
+footer{
+    width: 1920px; height: 479px;
+    background-color: #191919;
+    color: white;
+    position: relative;
+}
+#team{
+    font-size: 24px; font-weight: 700; line-height: 24px;
+    position: absolute;
+    top: 150px; left: 200px;
+}
+footer div{
+    position: absolute;
+    top: 250px; left: 200px;
+
+
+}
+.name{
+    font-size: 20px; font-weight: 500; line-height: 20px;
+    display: inline-block;
+    margin-right: 125px;
+}
+.name span{
+    font-size: 14px; font-weight: 500; line-height: 14px;
+}
+
+p{
+    font-size: 20px; letter-spacing :-0.2%;
+    font-weight: 400;  line-height: 30px;
+}
+h3{
+    font-size: 60px; letter-spacing :-2%;
+    font-weight: 400;  line-height: 60px;
+}
+
+/* 애니메이션 */
+
+@keyframes opacity{
+    from{  
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+

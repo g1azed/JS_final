@@ -1,0 +1,258 @@
+/*section 1*/
+#main_box1_wrap {
+    width: 1920px;
+    background-color: black;
+}
+
+#box1 {
+    color: white;
+    width: 1520px;
+    height: 1080px;
+
+    position: relative;
+    /* margin-right: 200px; */
+}
+
+
+#box1_logo {
+    margin-top: 350px;
+    display: inline-block;
+    margin-left: 200px;
+}
+
+#box1_logo img {
+    width: 72px;
+    height: 72px;
+}
+#box1_logo_text {
+    display: block;
+    width: 500px;
+}
+#box1_logo_text h2 {
+    margin-top: 50px;
+    font-size: 72px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 100%; letter-spacing: -2%;
+}
+#box1_logo_text h4 {
+    margin-top: 100px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 48px; letter-spacing: -2%;
+}
+#box1_logo_text p{
+    color: #ccc;
+    font-weight: 400; 
+    font-size: 24px;
+    line-height: 24px; letter-spacing: -2%;
+}
+
+
+#mockup {
+    float: right;
+    position: absolute;
+    left: 778px;
+    bottom: -4px;
+}
+
+#mockup img {
+    width: 1128px;
+    height: auto;
+    /* filter: drop-shadow(0px 20px 75px rgba(0, 0, 0, 0.3)); */
+}
+
+
+
+/* section 2 */
+#box2 {
+    width: 1520px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#box2_left {
+    margin-top: 200px;
+    display: inline-block;
+}
+#box2_left h5 {
+    font-size: 24px;
+    font-weight: 700; line-height: 100%; letter-spacing: 0.02em;
+    margin-bottom: 50px;
+    
+}
+#box2_left h3 {
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 75px; letter-spacing: 0.02em;
+}
+#box2_left p {
+    font-size: 20px;
+    margin-top: 200px;
+}
+
+#box2_right{
+    /* margin-right: 200px; */
+    margin-top: 200px;
+    float: right;
+    position: relative;
+    width:633px; height: auto;
+}
+.bk_box2{
+
+    background-color: #191919;
+    border-radius: 8px;
+    color: white;
+    text-align: justify; line-height: 150%;
+    display: inline;
+    filter: drop-shadow(0 15px 15px rgba(0,0,0,0.15));
+
+    position: absolute;
+}
+.bk_box2 p{
+    font-size: 20px; letter-spacing :-0.2%;
+    font-weight: 500;
+}
+.bk_1 {
+    width: 380px; height: auto;
+    left: 0px;
+    padding: 30px 40px 30px 40px;
+}
+.bk_2{
+    width: 483px; height: auto;
+    top: 170px;
+    left: 250px;
+    padding: 30px 40px 30px 40px;
+}
+.bk_3{
+    width: 521px; height: auto;
+    top: 340px;
+    padding: 30px 40px 30px 40px;
+}
+.bk_4{
+    width: 450px; height: auto;
+    top: 520px;
+    left: 250px;
+    padding: 30px 40px 30px 40px;
+}
+
+
+/*section 3*/
+#box3_wrap {
+    background-color: black;
+}
+
+#box3 {
+    color: white;
+}
+
+#box3_top {
+    display: block;
+    width: 1520px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#box3_top_left {
+    display: block;
+    float: left;
+    margin-top: 200px;
+}
+
+#box3_top_left h3 {
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 80px;
+}
+
+#box3_top_right {
+    display: block;
+    float: right;
+    margin-top: 200px;
+}
+
+#box3_top_right p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* #box3_bottom {
+    max-width: 1920px;
+    height: 250px;
+    z-index: 1;
+    position: absolute;
+    top: 2900px;
+    left: 30px;
+    overflow-x: hidden;
+}
+
+.slide_box {
+    margin: 0 25px 0 25px;
+    width: 507px;
+    height: auto;
+
+}
+
+.slide_box img {
+    width: 507px;
+    height: auto;
+    margin: 0 0;
+} */
+
+.banner_wrap{
+    width: 1920px;
+    position: absolute;
+    top: 2950px;
+}
+.banner_w {
+    width: 1920px;
+    height: 250px;
+    position: absolute;
+    overflow: hidden;
+
+    
+}
+
+.banner_w img {
+    width: 507px;
+    height: auto;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+
+
+/*section 4 */
+#box4 {
+    width: 1520px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#box4_left{
+    float: left;
+    margin-top: 224px;
+}
+#box4_left img{
+    width: 633px; height: auto;
+}
+#box4_right {
+    margin-top: 228px;
+    float: right;
+}
+#box4_right h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 76px;
+}
+#box4_right h3 {
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 70px;
+}
+
+#box4_right p {
+    font-size: 20px;
+    margin-top: 150px;
+}
